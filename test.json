@@ -1,0 +1,16 @@
+[
+    {
+        "name": "bday",
+        "date": "2027-03-24",
+        "time": "11:00 PM",
+        "desc": "MY BDAY FRICK YEAH",
+        "noti_delay": 30
+    },
+    {
+        "name": "Reg Opens",
+        "date": "2027-06-18",
+        "time": "9:00 AM",
+        "desc": "Registration Opens",
+        "noti_delay": 30
+    }
+]

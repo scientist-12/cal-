@@ -11,7 +11,7 @@ miles_cal = Cal()
 '''
 
 b_day = Event('bday', '2027-03-24',
-              '11:00 PM', 'MY BDAY FUCK YEAH',
+              '11:00 PM', 'MY BDAY FRICK YEAH',
               30)
 reg = Event('Reg Opens', '2027-06-18',
             '9:00 AM', 'Registration Opens',
@@ -20,11 +20,15 @@ reg = Event('Reg Opens', '2027-06-18',
 miles_cal.add_event(b_day)
 miles_cal.add_event(reg)
 
-print(miles_cal.get_events('2027-03-24'))
+#print(miles_cal.get_events('2027-03-24'))
+#print(miles_cal.get_events('2027-06-18'))
+
+miles_cal.save_to_js('test.json')
+
+miles_cal.js_to_py('test.json')
+
 print(miles_cal.get_events('2027-06-18'))
-
-
-
+print(miles_cal.get_events('2027-03-24'))
 
 
 

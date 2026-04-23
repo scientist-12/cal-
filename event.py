@@ -26,3 +26,12 @@ class Event:
         else:
             return False
         # change to return date.today() < self.date / explain y
+
+    def to_dict(self):
+        return {
+            "name": self.name,
+            "date": str(self.date),
+            "time": self.time,
+            "desc": self.desc,
+            "noti_delay": self.noti_delay
+        }
