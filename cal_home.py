@@ -49,3 +49,32 @@ class Cal:
             self.event_list = conv_events
         return self.event_list
             # remember to add a docstring for each method explaining its function
+
+    def rem_event(self, name):
+        #  self.event_list.remove(date_str)
+        #  above line was redundant, so it was removed
+        new_list = []
+        for event in self.event_list:
+           if event.name != name:
+               new_list.append(event)
+        self.event_list = new_list
+        # Previous line returned only the new list.
+        # Fixed the issue that caused: python would get that new list,
+        # but would not receive it in the main event list
+        return self.event_list
+
+    def dis_event(self):
+        return self.event_list
+    '''
+    Returning works better here. I initially thought that printing 
+    would be the better choice, considering you can just call it 
+    once you get to the main.py file, but returning is actually
+    better long term. Returning the data itself instead of keeping 
+    yourself linear with a print statement actually makes your 
+    program more flexible.
+    '''
+
+
+
+
+
